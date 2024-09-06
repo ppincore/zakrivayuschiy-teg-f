@@ -22,3 +22,7 @@
   background-color: var(--background-color);
   color: var(--page-color-text);
 }
+.header{
+  min-block-size: 667px;
+  block-size: 100vh;
+}
