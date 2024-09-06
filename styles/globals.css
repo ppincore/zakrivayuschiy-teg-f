@@ -1,15 +1,85 @@
-/* В этом файле уже написаны некоторые базовые стили, которые сбрасывают или преобразуют дефольное браузерное поведение.
-Здесь же лежит утилитарный класс visually-hidden на случай, если нужно скрыть какой-то элемент, но оставить доступным для скринридера.
-Вы можете изменять этот файл или дополнять. Но скорее всего, вам это не потребуется. */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 
 *,
-*::after,
-*::before {
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
 body {
-  margin: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+  margin: 0 auto;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
 }
 
 h1,
@@ -17,29 +87,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-ul,
-ol,
-li {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-}
-
-button,
-input {
-  color: currentColor;
-  font-family: inherit;
+h6 {
   font-size: inherit;
-}
-
-ul,
-ol {
-  list-style: none;
+  font-weight: 400;
 }
 
 .visually-hidden {
