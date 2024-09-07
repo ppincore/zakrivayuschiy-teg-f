@@ -7,8 +7,10 @@
 :root.theme-dark{
     --background-color: var(--color-dark,#000000);
     --page-color-text: var(--color-green, #00CC14);
+    --border-color: var(--color-green, #00CC14);
 }
 :root.theme-light{
     --background-color: var(--color-white,#fff);
     --page-color-text: var(--color-dark, #000000);
+    --border-color: var(--color-dark, #000000);
 }
