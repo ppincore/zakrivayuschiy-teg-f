@@ -10,4 +10,5 @@
 
   --background-color: var(--color-white, #fff);
   --page-color-text: var(--color-dark, #000000);
+  --border-color: var(--color-dark, #000000);
 }
