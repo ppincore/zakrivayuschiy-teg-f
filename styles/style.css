@@ -13,26 +13,82 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-
+/* *{
+  outline: 2px solid red;
+} */
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var( --main-font, sans-serif);
-  font-size: var(--page-main-font-size,18px);
+  font-family: "InterV";
+  font-size: var(--page-main-font-size, 18px);
   background-color: var(--background-color);
   color: var(--page-color-text);
-  background-image: 
-  linear-gradient(white 1px, transparent 1px);
 }
-.header{
-  min-block-size: 667px;
-  block-size: 100vh;
-
+.header {
+  
 }
-
-
-
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+}
+.card__list {
+  display: grid;
+  gap: 54px 0;
+}
+.card__list-item {
+  box-sizing: border-box;
+  block-size: clamp(47.5rem, 43.1206rem + 18.6854vw, 59.9375rem);
+  inline-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+  outline: 2px solid var(--border-color);
+}
 /* card */
-.card{
- outline: 2px solid var(--border-color);
+.card {
+
+  
+}
+.card__title {
+  font-weight: 700;
+  padding: 4px 10px;
+  line-height: 117%;
+}
+.image__wrapper {
+  overflow: hidden;
+
+
+  outline: 2px solid var(--border-color);
+}
+.card__content-image {
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 100%;
+}
+.text__wrapper {
+  display: grid;
+  gap: 27px;
+  padding: 25px;
+  line-height: 117%;
+}
+.card__footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 25px 25px 25px;
+}
+.card__button-heart {
+  block-size: 24px;
+  inline-size: 27px;
+}
+.card__button-like {
+  font-family: var(--page-accent-font);
+  font-size: 14px;
+  background-color: transparent;
+  outline: 2px solid var(--border-color);
+  padding: 10px 36px;
 }
