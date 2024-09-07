@@ -21,8 +21,18 @@
   font-size: var(--page-main-font-size,18px);
   background-color: var(--background-color);
   color: var(--page-color-text);
+  background-image: 
+  linear-gradient(white 1px, transparent 1px);
 }
 .header{
   min-block-size: 667px;
   block-size: 100vh;
+
+}
+
+
+
+/* card */
+.card{
+ outline: 2px solid var(--border-color);
 }
