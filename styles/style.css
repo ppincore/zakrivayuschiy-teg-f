@@ -24,14 +24,30 @@
   background-color: var(--background-color);
   color: var(--page-color-text);
 }
-.header {
-  padding: 100px 0;
-}
-.main {
+.container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+.header {
+  margin: 100px 0;
+  align-self: center;
+  font-family: var(--page-accent-font) ;
+}
+.theme-menu__button{
+  background-color:transparent;
+  font-size: 14px;
+}
+.theme-menu__button::after{
+content: '';
+display: block;
+width: 0%;
+height: 1px;
+background-image: linear-gradient( rgba(0 0 0 60%), rgba( 0 0 0 1));
+
+}
+.main {
+
   margin-block-end: 50px;
 }
 .footer {
@@ -41,12 +57,12 @@
   gap: 55px 0;
 }
 .card__list-item {
-  box-sizing: border-box;
-  outline: 2px solid var(--border-color);
-  max-inline-size: 696px;
+
 }
 /* card */
 .card {
+  outline: 2px solid var(--border-color);
+  max-inline-size: 696px;
 }
 .card__title {
   font-weight: 700;
