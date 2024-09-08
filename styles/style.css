@@ -44,7 +44,9 @@ display: block;
 width: 0%;
 height: 1px;
 background-image: linear-gradient( rgba(0 0 0 60%), rgba( 0 0 0 1));
-
+}
+.theme-menu__button:hover{
+  color: red;
 }
 .main {
 
