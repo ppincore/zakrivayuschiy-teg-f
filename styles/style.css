@@ -30,6 +30,9 @@
 margin: 0 auto;
 
 }
+.theme-menu__list{
+  padding: 20px;
+}
 .header {
   margin-block-start: 100px;
   font-family: var(--page-accent-font) ;
@@ -38,6 +41,10 @@ margin: 0 auto;
 .theme-menu__button{
   background-color:transparent;
   font-size: 14px;
+  text-transform: uppercase;
+  transition: opacity 0.5s ease;
+
+
 }
 .theme-menu__button::after{
   content: '';
@@ -45,21 +52,26 @@ margin: 0 auto;
   transform: scaleX(0);
   height: 2px;
   background-color: black;
-  transition: none;
+  transition: opacity 1s ease;
+  transform-origin: left;
+  background-color: currentColor;
 }
 .theme-menu__button:focus-visible,
 .theme-menu__button:hover{
   opacity: 0.6;
-  transition: opacity 500ms  ease;  
-}
-.theme-menu__button:focus-visible::after {
-  transform: scaleX(1);
-  transform-origin: left;
-  background-color: currentColor;
-  opacity: 0.6;
-  transition: transform 300ms, background-color 0.5s ease;
-}
 
+}
+.theme-menu__button:not(:focus-visible)::after,
+.theme-menu__button:focus-visible::after {
+  opacity: 0.6;
+  transition: transform 0.5s ease;
+}
+.theme-menu__button:focus-visible::after{
+  transform: scaleX(1);
+}
+.theme-menu__button:not(:focus-visible)::after {
+  transform: scaleX(0);
+}
 .main {
 
   margin-block-end: 50px;
