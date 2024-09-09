@@ -8,9 +8,15 @@
     --background-color: var(--color-dark,#000000);
     --page-color-text: var(--color-green, #00CC14);
     --border-color: var(--color-green, #00CC14);
+    --button-bg-color:var(--background-color, #000000);
+    --button-text-color: var(--color-green, #00CC14);
+  
 }
 :root.theme-light{
     --background-color: var(--color-white,#fff);
     --page-color-text: var(--color-dark, #000000);
     --border-color: var(--color-dark, #000000);
+    --button-bg-color:var(--background-color, #fff);
+    --button-text-color: var(--color-white,#fff);
+  
 }
