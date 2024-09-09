@@ -43,6 +43,11 @@
   justify-content: center;
   align-items: center;
 }
+.footer {
+  margin-block: 50px;
+  padding-block-end: 100px;
+}
+/* header menu nav-list */
 .theme-menu__button {
   background-color: transparent;
   font-size: 14px;
@@ -73,17 +78,11 @@
 .theme-menu__button:not(:focus-visible)::after {
   transform: scaleX(0);
 }
-.footer {
-  margin-block: 50px;
-  padding-block-end: 100px;
-}
+/* card */
 .card__list {
   display: grid;
   gap: 55px 0;
 }
-.card__list-item {
-}
-/* card */
 .card {
   outline: 2px solid var(--border-color);
   max-inline-size: 696px;
