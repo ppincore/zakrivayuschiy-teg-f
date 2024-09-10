@@ -53,6 +53,7 @@
   font-size: 14px;
   text-transform: uppercase;
   transition: opacity 0.5s ease;
+  position: relative;
 }
 .theme-menu__button::after {
   content: "";
@@ -77,6 +78,26 @@
 }
 .theme-menu__button:not(:focus-visible)::after {
   transform: scaleX(0);
+}
+
+.theme-menu__button:disabled{
+  opacity: 0.6;
+}
+.theme-menu__button:disabled::before{
+content: '▶';
+position: absolute;
+inset-inline-start: -25px ;
+animation: pointer 0.5s infinite ease-in-out alternate;
+
+}
+
+@keyframes pointer {
+  0% {
+    inset-inline-start: -25px ;
+  }
+  100% {
+    inset-inline-start: -21px ;
+  }
 }
 /* card */
 .card__list {
