@@ -10,7 +10,6 @@
                 --color-light-theme:#000000;
                 --icon-color: var(--color-dark-theme, #000000)
             }
-
             @media (prefers-color-scheme: dark){
                 :root {
                     --icon-color: var(--color-dark-theme, #00cc14)
