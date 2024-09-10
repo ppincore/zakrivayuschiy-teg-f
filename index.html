@@ -26,6 +26,8 @@
   </head>
   <body class="page">
     <header class="header card container">
+      <p class="header__logo">&lt;/html&gt;</p>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -65,8 +67,10 @@
               <div class="image__wrapper">
                 <img
                   src="./images/car-img.png"
-                  alt=""
+                  loading="lazy"
+                  alt="Яркое изображение фургона в лесу"
                   class="card__content-image modifier__bright"
+                  loading="lazy"
                 />
               </div>
               <div class="text__wrapper">
@@ -82,8 +86,8 @@
             </section>
             <footer class="card__footer">
               <button class="card__button-heart">♥</button>
-              <button class="card__button-like">
-                <span><span>Like</span></span>
+              <button class="button">
+                <span><span class="button__text">Like</span></span>
               </button>
             </footer>
           </article>
@@ -97,8 +101,10 @@
               <div class="image__wrapper">
                 <img
                   src="./images/car-img.png"
-                  alt=""
+                  loading="lazy"
+                  alt=" Чернобелое изображение фургона в лесу"
                   class="card__content-image modifier__greyscale"
+                  loading="lazy"
                 />
               </div>
               <div class="text__wrapper">
@@ -117,7 +123,9 @@
             </section>
             <footer class="card__footer">
               <button class="card__button-heart">♥</button>
-              <button class="card__button-like"><span>Like</span></button>
+              <button class="button">
+                <span class="button__text">Like</span>
+              </button>
             </footer>
           </article>
         </li>
@@ -130,7 +138,8 @@
               <div class="image__wrapper">
                 <img
                   src="./images/car-img.png"
-                  alt=""
+                  loading="lazy"
+                  alt="Контрастное изображение фургона в лесу"
                   class="card__content-image modifier__contrast"
                 />
               </div>
@@ -148,7 +157,9 @@
             </section>
             <footer class="card__footer">
               <button class="card__button-heart">♥</button>
-              <button class="card__button-like"><span>Like</span></button>
+              <button class="button">
+                <span class="button__text">Like</span>
+              </button>
             </footer>
           </article>
         </li>
@@ -161,7 +172,8 @@
               <div class="image__wrapper">
                 <img
                   src="./images/car-img.png"
-                  alt=""
+                  loading="lazy"
+                  alt="Изображение фургона в лесу с фиолетовым оттенком"
                   class="card__content-image modifier__hue"
                 />
               </div>
@@ -180,7 +192,9 @@
             </section>
             <footer class="card__footer">
               <button class="card__button-heart">♥</button>
-              <button class="card__button-like"><span>Like</span></button>
+              <button class="button">
+                <span class="button__text">Like</span>
+              </button>
             </footer>
           </article>
         </li>
@@ -193,7 +207,8 @@
               <div class="image__wrapper">
                 <img
                   src="./images/car-img.png"
-                  alt=""
+                  loading="lazy"
+                  alt="Инввертированное изображение фургона в лесу"
                   class="card__content-image modifier__reverse"
                 />
               </div>
@@ -213,7 +228,9 @@
             </section>
             <footer class="card__footer">
               <button class="card__button-heart">♥</button>
-              <button class="card__button-like"><span>Like</span></button>
+              <button class="button">
+                <span class="button__text">Like</span>
+              </button>
             </footer>
           </article>
         </li>
@@ -226,7 +243,8 @@
               <div class="image__wrapper">
                 <img
                   src="./images/car-img.png"
-                  alt=""
+                  loading="lazy"
+                  alt="изображение фургона в лесу в стиле сепия"
                   class="card__content-image modifier__sepia"
                 />
               </div>
@@ -243,7 +261,9 @@
             </section>
             <footer class="card__footer">
               <button class="card__button-heart">♥</button>
-              <button class="card__button-like"><span>Like</span></button>
+              <button class="button">
+                <span class="button__text">Like</span>
+              </button>
             </footer>
           </article>
         </li>
@@ -256,7 +276,8 @@
               <div class="image__wrapper">
                 <img
                   src="./images/car-img.png"
-                  alt=""
+                  loading="lazy"
+                  alt="Размытое изображение фургона в лесу"
                   class="card__content-image modifier__blur"
                 />
               </div>
@@ -275,7 +296,9 @@
             </section>
             <footer class="card__footer">
               <button class="card__button-heart">♥</button>
-              <button class="card__button-like"><span>Like</span></button>
+              <button class="button">
+                <span class="button__text">Like</span>
+              </button>
             </footer>
           </article>
         </li>
@@ -288,7 +311,8 @@
               <div class="image__wrapper">
                 <img
                   src="./images/car-img.png"
-                  alt=""
+                  loading="lazy"
+                  alt="изображение фургона в лесу в стиле старой фотографии"
                   class="card__content-image modifier__combine"
                 />
               </div>
@@ -310,15 +334,20 @@
             </section>
             <footer class="card__footer">
               <button class="card__button-heart">♥</button>
-              <button class="card__button-like"><span>Like</span></button>
+              <button class="button">
+                <span class="button__text">Like</span>
+              </button>
             </footer>
           </article>
         </li>
       </ul>
     </main>
     <footer class="footer container">
-      <button>
-        Сохранить на память
+      <button class="footer__button button ">
+        <svg class="button__img" viewBox="0 0 21 21">
+          <use href="floppy-disk"> 
+        </svg>
+        <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
     <script src="./scripts/like.js"></script>
