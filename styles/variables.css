@@ -3,7 +3,7 @@
   --page-main-font-weight: 400;
   --page-accent-font: "PressStart2P";
   --page-main-font-size: 18px;
-  --page-title-font-weigth:700;
+  --page-title-font-weigth: 700;
   --color-dark: #000000;
   --color-white: #fff;
   --color-green: #00cc14;
@@ -13,7 +13,6 @@
   --border-color: var(--color-dark, #000000);
 
   --button-bg-color: var(--background-color, #fff);
-  --button-text-color: var(--color-white,#fff);
-  --button-font-size:14px;
-  
+  --button-text-color: var(--color-white, #fff);
+  --button-font-size: 14px;
 }
