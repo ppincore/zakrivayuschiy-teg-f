@@ -26,5 +26,9 @@
     --button-bg-color: var(--background-color, #fff);
     --button-text-color: var(--color-white, #fff);
     --button-font-size: 14px;
+
+    --fill-color-contur:var(--border-color);
+    --fill-color-sparks: #ff0000;
+    --fill-color-bg: var(--background-color);
   }
   
