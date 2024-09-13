@@ -1,4 +1,40 @@
 :root.theme-dark {
+  --background-color: var(--color-dark, #000000);
+  --page-color-text: var(--color-green, #00cc14);
+  --border-color: var(--color-green, #00cc14);
+  --button-bg-color: var(--background-color, #000000);
+  --button-text-color: var(--color-green, #00cc14);
+  --page-main-font-weight: 465;
+  --page-title-font-weigth: 785;
+  --background-image: repeating-linear-gradient(
+      to bottom,
+      #000000 0px 2px,
+      #00000000 2px 4px
+    ),
+    repeating-linear-gradient(to left, #000000 0px 2px, #00000000 2px 4px),
+    linear-gradient(to bottom, #007f0c 0.01%, #004306);
+  --label-shadow: var(--color-dark);
+}
+:root.theme-light {
+  --background-color: var(--color-white, #fff);
+  --page-color-text: var(--color-dark, #000000);
+  --border-color: var(--color-dark, #000000);
+  --button-bg-color: var(--background-color, #fff);
+  --button-text-color: var(--color-white, #fff);
+  --page-main-font-weight: 400;
+  --page-title-font-weigth: 700;
+  --background-image: repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0px 2px,
+      #d3d3d300 2px 4px
+    ),
+    repeating-linear-gradient(to left, #d3d3d3 0px 2px, #d3d3d300 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --label-shadow: var(--color-white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
     --background-color: var(--color-dark, #000000);
     --page-color-text: var(--color-green, #00cc14);
     --border-color: var(--color-green, #00cc14);
@@ -6,36 +42,12 @@
     --button-text-color: var(--color-green, #00cc14);
     --page-main-font-weight: 465;
     --page-title-font-weigth: 785;
-    --background-image:  repeating-linear-gradient(
-      to bottom,
-      #000000 0px 2px ,
-      #00000000 2px 4px
-    ),
-    repeating-linear-gradient(
-      to left,
-      #000000 0px 2px ,
-      #00000000 2px 4px
-    ),
-    linear-gradient(to bottom, #007f0c 0.01%, #004306);
+    --background-image: repeating-linear-gradient(
+        to bottom,
+        #000000 0px 2px,
+        #00000000 2px 4px
+      ),
+      repeating-linear-gradient(to left, #000000 0px 2px, #00000000 2px 4px),
+      linear-gradient(to bottom, #007f0c 0.01%, #004306);
   }
-  :root.theme-light {
-    --background-color: var(--color-white, #fff);
-    --page-color-text: var(--color-dark, #000000);
-    --border-color: var(--color-dark, #000000);
-    --button-bg-color: var(--background-color, #fff);
-    --button-text-color: var(--color-white, #fff);
-    --page-main-font-weight: 400;
-    --page-title-font-weigth: 700;
-    --background-image:  repeating-linear-gradient(
-      to bottom,
-      #d3d3d3 0px 2px ,
-      #d3d3d300 2px 4px
-    ),
-    repeating-linear-gradient(
-      to left,
-      #d3d3d3 0px 2px ,
-      #d3d3d300 2px 4px
-    ),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  }
-  
+}
