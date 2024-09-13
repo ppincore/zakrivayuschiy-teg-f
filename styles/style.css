@@ -1,5 +1,5 @@
 * {
-  transition: background-color 1s ease-out;
+  transition: background-color 0.3s ease-out;
 }
 .page {
   min-inline-size: 320px;
@@ -109,6 +109,19 @@
   overflow: hidden;
   position: relative;
 }
+.card__label {
+  text-transform: uppercase;
+  font-family: var(--page-accent-font);
+  font-size: 14px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  inset-inline-end: clamp(0.6875rem, 0.4014rem + 1.2207vw, 1.5rem);
+  inset-block-start: clamp(1.4375rem, 1.3935rem + 0.1878vw, 1.5625rem);
+  mix-blend-mode: hard-light;
+  text-shadow: -1px 0 var(--label-shadow), 0 1px var(--label-shadow),
+    1px 0 var(--label-shadow), 0 -1px var(--label-shadow);
+}
 .wrapper__text {
   border-block-start: 2px solid var(--border-color);
   display: grid;
@@ -139,9 +152,8 @@
   text-transform: inherit;
   padding: 10.5px 35px;
   line-height: normal;
-  transition: transform 1s;
+  transition: transform 1s background-color 1s;
   z-index: 1;
-  transition: background-color 1s;
 }
 .button:focus-visible {
   box-shadow: 2px 2px var(--border-color);
@@ -195,7 +207,6 @@
   mix-blend-mode: difference;
 }
 
-
 /* FIlters */
 .modifier__bright {
   filter: brightness(125%);
@@ -207,7 +218,7 @@
   filter: saturate(400%);
 }
 .modifier__hue {
-  filter: hue-rotate(45deg)
+  filter: hue-rotate(45deg);
 }
 .modifier__blur {
   filter: blur(0.1rem);
@@ -220,4 +231,67 @@
 }
 .modifier__combine {
   filter: hue-rotate(360deg) contrast(1.1) brightness(125%);
+}
+/* modal  */
+.modal__window::backdrop {
+  background-color: rgba(0, 0, 0, 0.596);
+}
+
+.modal__window {
+  inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
+  display: grid;
+  gap: 30px;
+  padding: 32px;
+  background-color: var(--background-color);
+  color: var(--page-color-text);
+  border: 2px solid var(--border-color);
+  text-transform: uppercase;
+  position: fixed;
+  margin: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+.modal__window:not([open]) {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal__window-section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.modal__window-text {
+  font-family: var(--page-accent-font, "PressStart2P");
+  line-height: 150%;
+  font-size: 14px;
+}
+.modal__image {
+  fill: var(--border-color);
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+@media (width < 376px) {
+  .modal__window {
+    padding: 32px 42px;
+  }
+  .footer__save-btn {
+    flex-direction: column;
+  }
+  .footer__save-btn-img {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+}
+
+@supports (
+  (text-stroke: 1px var(--label-shadow)) or
+    (-webkit-text-stroke: 1px var(--label-shadow))
+) {
+  .card__label {
+    text-stroke: 1px var(--label-shadow);
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--label-shadow);
+  }
 }
