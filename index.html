@@ -66,6 +66,7 @@
               <section>
                 <section class="card__content">
                   <div class="wrapper__image">
+                    <span class="card__label">&lt;hello world!&gt;</span>
                     <img
                       src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHRvYmVud3QxNHh5MWYydW9jdmlkcXdrMG00aWJ3OWJoMmg3aW4yMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/M9aQLxALBXj773JWok/giphy.gif"
                       alt="изображение фургона в лесу"
@@ -139,7 +140,8 @@
               </header>
               <section>
                 <section class="card__content">
-                  <div class="wrapper__image ">
+                  <div class="wrapper__image">
+                    <span class="card__label">&lt;now is the time&gt;</span>
                     <img
                       src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHhwYjlnendiajZiM2FxcDB6NzliYXlhMWNsdzg3cGhyNXZmOHV6eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MKoyVvDRQvVAZbv4GD/giphy.gif"
                       alt="изображение фургона в лесу"
@@ -218,6 +220,7 @@
               <section>
                 <section class="card__content">
                   <div class="wrapper__image">
+                    <span class="card__label">&lt;dont give up&gt;</span>
                     <img
                       src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGYyY3h6YjZtenltZXBzcXQ5dXZ4aXB2ZndtZTQwNHZ0bWhnM29vNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o72EXwNn4v0EN7az6/giphy.gif"
                       alt="изображение фургона в лесу"
@@ -294,6 +297,7 @@
               <section>
                 <section class="card__content">
                   <div class="wrapper__image">
+                    <span class="card__label">&lt;hey, girl&gt;</span>
                     <img
                       src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnh2cnI3YWp6eTFxdDk4ejdydW40aDJ1NzhrbHpybGJ6eThiYXhqbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiN0q4Ff3tE81ceaI/giphy.gif"
                       alt="изображение фургона в лесу"
@@ -376,6 +380,7 @@
               <section>
                 <section class="card__content">
                   <div class="wrapper__image">
+                    <span class="card__label">&lt;not alone&gt;</span>
                     <img
                       src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2N3azM0aThmaDJrY2M1aXY2bTZ4c3I2b3V1Ymp4eGo3NXd4bnZqZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lIO4Zs5rSm61q/giphy.gif"
                       alt="изображение фургона в лесу"
@@ -455,6 +460,7 @@
               <section>
                 <section class="card__content">
                   <div class="wrapper__image">
+                    <span class="card__label">&lt;bruh&gt;</span>
                     <img
                       src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2wxY3puNGN5ZDJ6dXRoamFlOGE4ZWVpZDdrbnc0cnNyNTFjdGJmbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l46CeDBwmtMi1ddkc/giphy.gif"
                       alt="изображение фургона в лесу"
@@ -535,6 +541,7 @@
               <section>
                 <section class="card__content">
                   <div class="wrapper__image">
+                    <span class="card__label">&lt;stucked up&gt;</span>
                     <img
                       src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzQ0bHdtdWNzbDM2Y2RseXEwdjAyd21lOXU5ejdrNHZrbWs4NGwyYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohuPrhvXgjR8DCJhK/giphy.gif"
                       alt="изображение фургона в лесу"
@@ -614,6 +621,7 @@
               <section>
                 <section class="card__content">
                   <div class="wrapper__image">
+                    <span class="card__label">&lt;experience&gt;</span>
                     <img
                       src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTd0MmRkZGJ1aWg1OTE1c25mb2o4YzAxOHJxNnoxZnhpbndqb3IzMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1SH63gOjMPpS/giphy.gif"
                       alt="изображение фургона в лесу"
@@ -691,12 +699,31 @@
       </section>
     </main>
     <footer class="footer container">
-      <button class="footer__save-btn button">
+      <button
+        class="footer__save-btn button"
+        onclick="window['modal'].showModal();"
+      >
         <svg viewBox="0 0 40 40" class="footer__save-btn-img">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Cохранить на память</span>
       </button>
+      <dialog id="modal" class="modal__window">
+        <section class="modal__window-section">
+          <svg viewBox="0 0 40 40" class="modal__image">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="modal__window-text"
+            >Вставьте дискету, чтобы продолжить</span
+          >
+        </section>
+        <button
+          class="modal__window-btn button"
+          onclick="window['modal'].close()"
+        >
+          <span class="button__text">ок</span>
+        </button>
+      </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>
