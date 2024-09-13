@@ -194,3 +194,30 @@
   block-size: 21px;
   mix-blend-mode: difference;
 }
+
+
+/* FIlters */
+.modifier__bright {
+  filter: brightness(125%);
+}
+.modifier__greyscale {
+  filter: grayscale(0.8);
+}
+.modifier__contrast {
+  filter: saturate(400%);
+}
+.modifier__hue {
+  filter: hue-rotate(45deg)
+}
+.modifier__blur {
+  filter: blur(0.1rem);
+}
+.modifier__ivert-bright {
+  filter: invert(0.2) brightness(125%);
+}
+.modifier__sepia {
+  filter: sepia(50%);
+}
+.modifier__combine {
+  filter: hue-rotate(360deg) contrast(1.1) brightness(125%);
+}
