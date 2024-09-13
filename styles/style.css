@@ -115,7 +115,7 @@
   font-size: 14px;
   position: absolute;
   z-index: 1;
-  opacity: 0.4;
+  opacity: 0.6;
   inset-inline-end: clamp(0.6875rem, 0.4014rem + 1.2207vw, 1.5rem);
   inset-block-start: clamp(1.4375rem, 1.3935rem + 0.1878vw, 1.5625rem);
   mix-blend-mode: hard-light;
