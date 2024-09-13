@@ -5,7 +5,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: "InterV";
-  font-weight: var(--page-main-font-weight, 400);
+  font-variation-settings: "wght" var(--page-main-font-weight, 400);
   font-size: var(--page-main-font-size, 18px);
   background-color: var(--background-color);
   color: var(--page-color-text);
@@ -234,7 +234,7 @@
 }
 /* modal  */
 .modal__window::backdrop {
-  background-color: rgba(0, 0, 0, 0.596);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .modal__window {
@@ -291,7 +291,7 @@
 ) {
   .card__label {
     text-stroke: 1px var(--label-shadow);
-    text-shadow: none;
     -webkit-text-stroke: 1px var(--label-shadow);
+    text-shadow: none;
   }
 }
