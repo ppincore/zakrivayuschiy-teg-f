@@ -1,7 +1,7 @@
 :root {
-  --page-main-font: "InterV";
+  --page-main-font: "InterV" , sans-serif;
   --page-main-font-weight: 400;
-  --page-accent-font: "PressStart2P";
+  --page-accent-font: "PressStart2P", fantasy;
   --page-main-font-size: 18px;
   --page-title-font-weigth: 700;
   --color-dark: #000000;
@@ -23,9 +23,9 @@
   --button-text-color: var(--color-white, #fff);
   --button-font-size: 14px;
 
-  --fill-color-contur: var(--border-color);
+  --fill-color-contur: var(--border-color, #000000);
   --fill-color-sparks: #ff0000;
-  --fill-color-bg: var(--background-color);
+  --fill-color-bg: var(--background-color, #fff);
 
-  --label-shadow: var(--color-white);
+  --label-shadow: var(--color-white, #fff);
 }
