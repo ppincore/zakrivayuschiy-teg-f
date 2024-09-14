@@ -695,13 +695,14 @@
           >Вставьте дискету, чтобы продолжить</span
         >
       </div>
-      <button
+      <form method="dialog">
+        <button
         class="modal__window-btn button"
-        onclick="window['modal'].close()"
         type="submit"
       >
         <span class="button__text">Ок</span>
       </button>
+      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
