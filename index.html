@@ -8,12 +8,10 @@
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
-    <!-- ПОДСТАВИТЬ ДАННЫЕ -->
     <meta property="og:title" content="Закрывающий тег" />
     <meta property="og:url" content="#" />
     <meta property="og:image" content="./images/car-img.png" />
     <meta property="twitter:card" content="car_large_image" />
-    <!--  -->
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -27,7 +25,6 @@
       <p class="header__logo">&lt;/html&gt;</p>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
             <button type="button" data-theme="dark" class="theme-menu__button">
@@ -677,37 +674,35 @@
           </article>
         </li>
       </ul>
-    </main>
-    <footer class="footer container">
       <button
-        class="footer__save-btn button"
+        class="main__save-btn button"
         onclick="window['modal'].showModal();"
         aria-controls="modal"
         type="button"
       >
-        <svg viewBox="0 0 40 40" class="footer__save-btn-img">
+        <svg viewBox="0 0 40 40" class="main__save-btn-img">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-      <dialog id="modal" class="modal__window">
-        <div class="modal__window-section">
-          <svg viewBox="0 0 40 40" class="modal__image">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <span class="modal__window-text"
-            >Вставьте дискету, чтобы продолжить</span
-          >
-        </div>
-        <button
-          class="modal__window-btn button"
-          onclick="window['modal'].close()"
-          type="button"
+    </main>
+    <dialog id="modal" class="modal__window">
+      <div class="modal__window-section">
+        <svg viewBox="0 0 40 40" class="modal__image">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="modal__window-text"
+          >Вставьте дискету, чтобы продолжить</span
         >
-          <span class="button__text">Ок</span>
-        </button>
-      </dialog>
-    </footer>
+      </div>
+      <button
+        class="modal__window-btn button"
+        onclick="window['modal'].close()"
+        type="submit"
+      >
+        <span class="button__text">Ок</span>
+      </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
