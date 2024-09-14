@@ -275,10 +275,10 @@
   .modal__window {
     padding: 32px 42px;
   }
-  .footer__save-btn {
+  .main__save-btn {
     flex-direction: column;
   }
-  .footer__save-btn-img {
+  .main__save-btn-img {
     inline-size: 28px;
     block-size: 28px;
   }
