@@ -263,8 +263,8 @@
   line-height: 150%;
   font-size: 14px;
 }
-.modal__window-btn{
-inline-size: 100%;
+.modal__window-btn {
+  inline-size: 100%;
 }
 @media (width < 376px) {
   .modal__window {
