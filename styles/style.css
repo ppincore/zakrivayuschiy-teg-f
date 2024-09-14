@@ -242,6 +242,11 @@
   margin: auto;
   transition: opacity 0.3s ease-in-out;
 }
+.modal__window::backdrop { 
+
+  background-color: rgba(0, 0, 0, 0.75); 
+
+}
 .modal__window:not([open]) {
   opacity: 0;
   pointer-events: none;
