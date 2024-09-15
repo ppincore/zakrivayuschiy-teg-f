@@ -230,22 +230,19 @@
   mix-blend-mode: difference;
 }
 .modal__window {
-  inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
+  inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
   display: grid;
   gap: 30px;
-  padding: 32px;
+  padding: 30px 29.5px 27px;
   background-color: var(--background-color, #fff);
   color: var(--page-color-text, #000000);
   border: 2px solid var(--border-color, #000000);
   text-transform: uppercase;
-  position: fixed;
-  margin: auto;
   transition: opacity 0.3s ease-in-out;
+  margin: auto;
 }
-.modal__window::backdrop { 
-
-  background-color: rgba(0, 0, 0, 0.75); 
-
+.modal__window::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 .modal__window:not([open]) {
   opacity: 0;
@@ -271,9 +268,10 @@
 .modal__window-btn {
   inline-size: 100%;
 }
-@media (width < 376px) {
+@media (width <= 375px) {
   .modal__window {
-    padding: 32px 42px;
+    padding: 30px 40px 28px 40px;
+    max-inline-size: 341px;
   }
   .main__save-btn {
     flex-direction: column;
@@ -289,8 +287,8 @@
     (-webkit-text-stroke: 1px var(--label-shadow, #fff))
 ) {
   .card__label {
-    text-stroke: 1px var(--label-shadow, #fff);
     -webkit-text-stroke: 1px var(--label-shadow, #fff);
+    text-stroke: 1px var(--label-shadow, #fff);
     text-shadow: none;
   }
 }
